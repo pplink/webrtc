@@ -23,7 +23,7 @@ namespace webrtc {
 
 class ObjCVideoDecoderFactory : public VideoDecoderFactory {
  public:
-  explicit ObjCVideoDecoderFactory(id<RTC_OBJC_TYPE(RTCVideoDecoderFactory)>);
+  RTC_EXPORT explicit ObjCVideoDecoderFactory(id<RTC_OBJC_TYPE(RTCVideoDecoderFactory)>);
   ~ObjCVideoDecoderFactory() override;
 
   id<RTC_OBJC_TYPE(RTCVideoDecoderFactory)> wrapped_decoder_factory() const;

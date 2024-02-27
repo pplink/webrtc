@@ -31,7 +31,7 @@ namespace webrtc {
 // and `remote_offered_params` must be equal before calling this function. The
 // parameters that are used when negotiating are the level part of
 // profile-level-id and level-asymmetry-allowed.
-void H264GenerateProfileLevelIdForAnswer(
+RTC_EXPORT void H264GenerateProfileLevelIdForAnswer(
     const SdpVideoFormat::Parameters& local_supported_params,
     const SdpVideoFormat::Parameters& remote_offered_params,
     SdpVideoFormat::Parameters* answer_params);

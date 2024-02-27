@@ -21,6 +21,7 @@
 
 namespace webrtc {
 
+__attribute__((visibility("default")))
 rtc::scoped_refptr<AudioDeviceModule> CreateAudioDeviceModule(bool bypass_voice_processing) {
   RTC_DLOG(LS_INFO) << __FUNCTION__;
 #if defined(WEBRTC_IOS)
